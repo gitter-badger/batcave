@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>asd</title>
+</head>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://localhost');
+  socket.on('reload', function (data) {
+    window.location.reload();
+  });
+</script>
+
+
+<body>
+    <b>Test</b>
+
+</body>
+</html>
